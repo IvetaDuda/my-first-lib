@@ -1,13 +1,6 @@
 :root {
-  --main_bg_color: #ffffff;
-  --dark_fonf_color: #3e3e3e;
-  --light_fonf_color: #ffffff;
-  --accent_color: #fca311;
-  --header_bg_color: #171717;
-  --footer_bg_color: #8d8d8d;
-  --contact_bg_color: #343332;
-  --modal_bg_color: #020b11;
-  --modal_text_color: #474747;
+  --main_bg_color: #2c2b2b;
+  --main_text_color: #1d1d1d;
 }
 
 * {
@@ -23,9 +16,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-// .bodyHidden {
-//   overflow-block: hidden;
-// }
+
 body {
   display: flex;
   flex-direction: column;
@@ -33,6 +24,9 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   position: relative;
+  background-color: var(--main_bg_color);
+  background-image: url('../../public/annie-spratt-6a3nqQ1YwBw-unsplash.jpg');
+  background-size: cover;
 }
 main {
   display: flex;
@@ -51,6 +45,7 @@ section {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {

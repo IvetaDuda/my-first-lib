@@ -1,13 +1,17 @@
-import styles from './page.module.css';
+import styles from './page.module.scss';
 
 export default function Home() {
   return (
-    <div className={styles.homeContainer}>
+    <section className={styles.homeContainer}>
       <div className={styles.home}>
-        <div className={styles.animateContainer}>
-          <div className={styles.links}></div>
+        <div className={styles.context}>
+          <p>my</p>
+          <p>first</p>
+          <p>Library</p>
+          <span className={styles.text}>hover</span>
+          <span className={styles.text}>animation</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
