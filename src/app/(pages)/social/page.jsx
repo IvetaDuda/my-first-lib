@@ -1,32 +1,23 @@
 'use client';
 
 import SocialLinksList from '@/components/SocialLinks/SocialLinksList/SocialLinksList';
+import SocialLinksShadow from '@/components/SocialLinks/SocialLinksShadow/SocialLinksShadow';
+import CarouselItem from '@/components/CarouselItem/CarouselItem';
 import styles from './page.module.scss';
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const data = [
   {
     id: 1,
+    title: 'Social links',
     component: <SocialLinksList />,
   },
-  { id: 2, component: 'BUTTON' },
+  { id: 2, title: 'Social links shadow', component: <SocialLinksShadow /> },
 ];
 
 const SocialLinks = () => {
   return (
     <section className={styles.homeContainer}>
-      <Carousel interval={null}>
-        {data.map(({ id, component }) => (
-          <Carousel.Item key={id}>
-            <div className={styles.animate}>
-              <Carousel.Caption className={styles.carouselCaption}>
-                <div className={styles.animateContainer}>{component}</div>
-              </Carousel.Caption>
-            </div>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      <CarouselItem data={data} />
     </section>
   );
 };

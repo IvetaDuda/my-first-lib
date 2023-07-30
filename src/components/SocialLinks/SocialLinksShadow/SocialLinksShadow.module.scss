@@ -1,0 +1,101 @@
+.socialContainer {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dedede;
+
+  -webkit-clip-path: polygon(
+    44% 22%,
+    80% 19%,
+    100% 36%,
+    93% 73%,
+    67% 73%,
+    26% 78%,
+    6% 71%,
+    0 50%,
+    12% 17%
+  );
+  clip-path: polygon(
+    44% 22%,
+    80% 19%,
+    100% 36%,
+    93% 73%,
+    67% 73%,
+    26% 78%,
+    6% 71%,
+    0 50%,
+    12% 17%
+  );
+}
+
+.social {
+  display: flex;
+  padding: 0;
+}
+
+.iconContainer {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: 0.5s;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+  &:hover .facebook {
+    fill: #4267b2;
+  }
+
+  &:hover .twitter {
+    fill: #00aced;
+  }
+
+  &:hover .telegram {
+    fill: #229ed9;
+  }
+
+  &:hover .linkedin {
+    fill: #0e76a8;
+  }
+
+  &:hover .instagram {
+    fill: #e4405f;
+  }
+}
+
+.iconLink {
+  widht: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  transition: 0.5s;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #262626;
+}
+
+.facebook,
+.linkedin {
+  border-radius: 50%;
+}

@@ -1,12 +1,11 @@
 .footer {
   padding: 8px 0;
-  // background-color: #1d1d1d;
 }
 
 .footerContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #e9c648;
+  color: var(--accent_color);
   text-transform: uppercase;
 }

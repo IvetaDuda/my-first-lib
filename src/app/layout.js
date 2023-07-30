@@ -2,6 +2,9 @@ import './globals.scss';
 import { KoHo } from 'next/font/google';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import Providers from '@/components/Providers/Providers';
+import { Suspense } from 'react';
+import Loading from './loading';
 
 const koho = KoHo({
   subsets: ['latin'],
@@ -10,17 +13,21 @@ const koho = KoHo({
 });
 
 export const metadata = {
-  title: 'Бібліотека',
-  description: 'Бібліотека анімацій',
+  title: 'Library',
+  description: 'Library animation',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="uk">
+    <html lang="en">
       <body className={koho.className}>
-        <Header />
-        <main className="container">{children}</main>
-        <Footer />
+        <Providers>
+          <Header />
+          <Suspense fallback={<Loading />}>
+            <main className="container">{children}</main>
+          </Suspense>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

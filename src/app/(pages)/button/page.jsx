@@ -1,30 +1,21 @@
 'use client';
 
-import styles from './page.module.scss';
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Bell from '@/components/Buttons/Bell/Bell';
 import Explore from '@/components/Buttons/Explore/Explore';
+import FormButton from '@/components/Buttons/FormButton/FormButton';
+import CarouselItem from '@/components/CarouselItem/CarouselItem';
+import styles from './page.module.scss';
 
 const data = [
-  { id: 1, component: <Explore /> },
-  { id: 2, component: <Bell /> },
+  { id: 1, title: 'Explore', component: <Explore /> },
+  { id: 2, title: 'Bell', component: <Bell /> },
+  { id: 3, title: 'Form button', component: <FormButton /> },
 ];
 
 const Button = () => {
   return (
     <section className={styles.homeContainer}>
-      <Carousel interval={null}>
-        {data.map(({ id, component }) => (
-          <Carousel.Item key={id}>
-            <div className={styles.animate}>
-              <Carousel.Caption className={styles.carouselCaption}>
-                <div className={styles.animateContainer}>{component}</div>
-              </Carousel.Caption>
-            </div>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      <CarouselItem data={data} />
     </section>
   );
 };

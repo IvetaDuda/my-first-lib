@@ -1,3 +1,35 @@
+.explore {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #010101b5;
+
+  -webkit-clip-path: polygon(
+    44% 22%,
+    80% 19%,
+    100% 36%,
+    93% 73%,
+    67% 73%,
+    26% 78%,
+    6% 71%,
+    0 50%,
+    12% 17%
+  );
+  clip-path: polygon(
+    44% 22%,
+    80% 19%,
+    100% 36%,
+    93% 73%,
+    67% 73%,
+    26% 78%,
+    6% 71%,
+    0 50%,
+    12% 17%
+  );
+}
+
 .btn {
   font-family: 'Space Mono', monospace;
   letter-spacing: 1px;

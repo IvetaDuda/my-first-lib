@@ -1,0 +1,42 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  position: relative;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  &:after,
+  &:before {
+    content: ' ';
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+  &:after {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+  }
+  &:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+  }
+  &:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    &:before,
+    &:after {
+      width: 105%;
+      height: 111%;
+    }
+  }
+}

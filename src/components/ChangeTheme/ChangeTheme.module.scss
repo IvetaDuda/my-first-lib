@@ -1,0 +1,39 @@
+.themeContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.svgChange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  fill: var(--fill_color_theme);
+  &:hover {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.sun:hover {
+  animation: rotate 1s reverse;
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

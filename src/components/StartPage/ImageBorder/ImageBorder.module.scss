@@ -11,6 +11,8 @@
   cursor: pointer;
   transition: 0.3s;
   border-radius: 50%;
+
+  border: none;
   &:hover {
     outline: var(--b) solid var(--c);
     outline-offset: var(--g);

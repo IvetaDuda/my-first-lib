@@ -14,7 +14,7 @@
   border-radius: 50px;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
-  outline: 1px solid #ffffff;
+  outline: 1px solid var(--fill_color_link);
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
   &:hover {
@@ -46,7 +46,7 @@
   display: block;
   width: 25px;
   height: 25px;
-  fill: #ffffff;
+  fill: var(--fill_color_link);
 }
 
 .instagram:hover {
@@ -77,6 +77,9 @@
     #bc1888 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+  &:hover .iconSocialLink {
+    fill: #ffffff;
+  }
 }
 
 .facebook {
@@ -84,6 +87,9 @@
   &:focus {
     background-color: #4267b2;
     outline: 1px solid #4267b2;
+    &:hover .iconSocialLink {
+      fill: #ffffff;
+    }
   }
 }
 
@@ -92,6 +98,9 @@
   &:focus {
     background-color: #229ed9;
     outline: 1px solid #229ed9;
+    &:hover .iconSocialLink {
+      fill: #ffffff;
+    }
   }
 }
 
@@ -100,5 +109,8 @@
   &:focus {
     background-color: #0e76a8;
     outline: 1px solid #0e76a8;
+    &:hover .iconSocialLink {
+      fill: #ffffff;
+    }
   }
 }

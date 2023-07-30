@@ -1,6 +1,23 @@
 :root {
   --main_bg_color: #2c2b2b;
-  --main_text_color: #1d1d1d;
+  --header_bg_color: #1d1d1d;
+  --accent_color: #e9c648;
+  --card_bg_color: #1d1d1d;
+  --fill_color_link: #ffffff;
+  --fill_color_theme: #e9c648;
+}
+[data-theme='light'],
+[data-theme='light'] :root {
+  --main_bg_color: #ffffff;
+  --header_bg_color: #e1d8c6b5;
+
+  --accent_color: #373737;
+  --card_bg_color: #313030;
+  --fill_color_link: #ffffff;
+  --fill_color_theme: #373737;
+  // --card_bg_color: #c9c0b0;
+  // --card_bg_color: #2a2929;
+  // --fill_color_link: #121212;
 }
 
 * {
@@ -25,8 +42,16 @@ body {
   min-height: 100vh;
   position: relative;
   background-color: var(--main_bg_color);
-  background-image: url('../../public/annie-spratt-6a3nqQ1YwBw-unsplash.jpg');
+  background-image: url('../../public/kiwihug-y_2GC4EhOP4-unsplash.jpg');
+
+  // background-image: url('../../public/peter-gargiulo-cGNCepznaV8-unsplash.jpg');
   background-size: cover;
+}
+[data-theme='dark'],
+[data-theme='dark'] body {
+  background-image: url('../../public/annie-spratt-6a3nqQ1YwBw-unsplash.jpg');
+  // background-image: url('../../public/main_texture.jpg');
+  z-index: -1;
 }
 main {
   display: flex;
