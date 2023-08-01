@@ -3,8 +3,6 @@ import { KoHo } from 'next/font/google';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import Providers from '@/components/Providers/Providers';
-import { Suspense } from 'react';
-import Loading from './loading';
 
 const koho = KoHo({
   subsets: ['latin'],
@@ -23,9 +21,7 @@ export default function RootLayout({ children }) {
       <body className={koho.className}>
         <Providers>
           <Header />
-          <Suspense fallback={<Loading />}>
-            <main className="container">{children}</main>
-          </Suspense>
+          <main className="container">{children}</main>
           <Footer />
         </Providers>
       </body>

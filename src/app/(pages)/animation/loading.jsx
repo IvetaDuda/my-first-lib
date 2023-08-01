@@ -1,9 +1,8 @@
-'use client';
-
+import Loader from '@/components/Loader/Loader';
 import Spinner from 'react-bootstrap/Spinner';
 
 const Loading = () => {
-  return <Spinner animation="border" />;
+  return <Loader />;
 };
 
 export default Loading;

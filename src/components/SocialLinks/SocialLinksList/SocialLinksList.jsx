@@ -1,5 +1,5 @@
 import React from 'react';
-import { socialData } from '../../../data/social';
+import { socialData } from './social';
 import SocialLinkItem from './SocialLinkItem';
 // import sprite from 'sprite.svg';
 import styles from './SocialLink.module.scss';
