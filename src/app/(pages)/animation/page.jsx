@@ -1,7 +1,7 @@
 'use client';
 
 import Globe from '@/components/StartPage/Globe/Globe';
-import CroppedPicture from '@/components/StartPage/CroppedPicture/croppedPicture';
+// import CroppedPicture from '@/components/StartPage/CroppedPicture/croppedPicture';
 import ImageGallery from '@/components/StartPage/ImageGallery/ImageGallery';
 import ImageBorder from '@/components/StartPage/ImageBorder/ImageBorder';
 import CarouselItem from '@/components/CarouselItem/CarouselItem';
@@ -9,7 +9,7 @@ import styles from './page.module.scss';
 
 const data = [
   { id: 1, title: 'Image gallery', component: <ImageGallery /> },
-  { id: 2, title: 'Cropped picture', component: <CroppedPicture /> },
+  // { id: 2, title: 'Cropped picture', component: <CroppedPicture /> },
   { id: 3, title: 'Image border', component: <ImageBorder /> },
   { id: 4, title: 'Globe', component: <Globe /> },
 ];
