@@ -1,16 +1,20 @@
 .gallery {
   --g: 8px; /* the gap */
-  --s: 350px; /* the size */
+  --s: 200px; /* the size */
 
   display: grid;
   border-radius: 50%;
   &:hover .imgGallery {
     transform: translate(0, 0);
   }
+  @media screen and (min-width: 768px) {
+    --s: 350px; /* the size */
+  }
 }
 .imgGallery {
   grid-area: 1/1;
-  width: 350px;
+  width: 200px;
+  height: 200px;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
@@ -18,6 +22,10 @@
   cursor: pointer;
   z-index: 0;
   transition: 0.3s, z-index 0s 0.3s;
+  @media screen and (min-width: 768px) {
+    width: 350px;
+    height: 350px;
+  }
   &:hover {
     --_i: 1;
     z-index: 1;

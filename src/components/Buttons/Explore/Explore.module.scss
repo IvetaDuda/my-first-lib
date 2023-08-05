@@ -1,6 +1,6 @@
 .explore {
-  width: 500px;
-  height: 300px;
+  width: 240px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,6 +28,10 @@
     0 50%,
     12% 17%
   );
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    height: 300px;
+  }
 }
 
 .btn {

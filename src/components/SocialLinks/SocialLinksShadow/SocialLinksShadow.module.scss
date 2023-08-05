@@ -1,6 +1,6 @@
 .socialContainer {
-  width: 500px;
-  height: 300px;
+  width: 220px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,6 +28,10 @@
     0 50%,
     12% 17%
   );
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    height: 300px;
+  }
 }
 
 .social {
@@ -37,8 +41,8 @@
 
 .iconContainer {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   display: block;
   text-align: center;
   border-radius: 50%;
@@ -75,6 +79,10 @@
   &:hover .instagram {
     fill: #e4405f;
   }
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .iconLink {
@@ -90,9 +98,13 @@
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
   fill: #262626;
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .facebook,

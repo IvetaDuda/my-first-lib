@@ -1,10 +1,16 @@
 .animate {
-  width: 900px;
+  width: 360px;
   height: 530px;
+  @media screen and (min-width: 768px) {
+    width: 728px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 900px;
+  }
 }
 
 .animateContainer {
-  width: 700px;
+  width: 320px;
   height: 400px;
   display: flex;
   align-items: center;
@@ -23,6 +29,14 @@
   //   #e8decb 74%,
   //   #ffffff 100%
   // );
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    height: 400px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 700px;
+    height: 400px;
+  }
 }
 
 .textContainer {

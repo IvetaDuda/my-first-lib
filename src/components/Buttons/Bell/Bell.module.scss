@@ -1,6 +1,6 @@
 .bellContainer {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background: linear-gradient(#8a82fb, #407ed7);
   position: absolute;
   margin: auto;
@@ -22,6 +22,10 @@
     background-color: #8a82fb;
     border-radius: 50%;
     opacity: 0.7;
+  }
+  @media screen and (min-width: 768px) {
+    width: 150px;
+    height: 150px;
   }
 }
 .bellContainer::before {

@@ -19,11 +19,6 @@ const ChangeTheme = () => {
   {
   }
   return (
-    // <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-    //   <option value="system">System</option>
-    //   <option value="dark">Dark</option>
-    //   <option value="light">Light</option>
-    // </select>
     <div className={styles.themeContainer}>
       {theme === 'dark' ? (
         <button className={styles.btn} onClick={() => setTheme('light')}>

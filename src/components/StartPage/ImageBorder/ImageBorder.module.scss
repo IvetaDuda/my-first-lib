@@ -1,10 +1,11 @@
 .imgBorder {
-  --s: 350px; /* the size of the image */
-  --b: 8px; /* the border thickness*/
-  --g: 14px; /* the gap */
+  --s: 200px; /* the size of the image */
+  --b: 4px; /* the border thickness*/
+  --g: 10px; /* the gap */
   --c: #163b1b; /* the color */
 
   width: var(--s);
+  height: 200px;
   aspect-ratio: 1;
   outline: calc(var(--s) / 2) solid #0009;
   outline-offset: calc(var(--s) / -2);
@@ -16,5 +17,14 @@
   &:hover {
     outline: var(--b) solid var(--c);
     outline-offset: var(--g);
+  }
+  @media screen and (min-width: 768px) {
+    --s: 350px; /* the size of the image */
+    --b: 6px; /* the border thickness*/
+    --g: 14px; /* the gap */
+    height: 350px;
+  }
+  @media screen and (min-width: 1440px) {
+    --b: 8px; /* the border thickness*/
   }
 }

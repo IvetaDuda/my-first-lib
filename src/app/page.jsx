@@ -18,8 +18,8 @@ export default function Home() {
           <p>my</p>
           <p>first</p>
           <p>Library</p>
-          <span className={styles.text}>hover</span>
-          <span className={styles.text}>animation</span>
+          {/* <span className={styles.text}>hover</span>
+          <span className={styles.text}>animation</span> */}
         </div>
       </div>
     </section>
